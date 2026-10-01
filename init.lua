@@ -1,4 +1,25 @@
-require("bookmarks"):setup({
-	persist = "all",
-	file_pick_mode = "parent",
+require("bunny"):setup({
+  hops = {
+    { key = "/",          path = "/",                                    },
+    { key = "t",          path = "/tmp",                                 },
+    { key = "n",          path = "~/nixos/hosts/linux_pc/",     desc = "nix config"    },
+    { key = "~",          path = "~",              desc = "Home"         },
+    { key = "D",          path = "~/Desktop",      desc = "Desktop"      },
+    { key = "d",          path = "~/Downloads/",    desc = "Downloads"    },
+    { key = "C",          path = "~/.config",      desc = "Config files" },
+    { key = "y",          path = "~/.config/yazi/",      desc = "Yazi Config" },
+    { key = "N",          path = "~/.config/nvim/",      desc = "Nvim Config" },
+    { key = "c",          path = "~/Documents/code/",     desc = "Code" },
+    { key = "h",          path = "~/Documents/",     desc = "Documents" },
+    { key = "u",          path = "~/Documents/Uni/BA/",     desc = "Uni" },
+    { key = "z",          path = "~/Documents/code/zig",     desc = "Zig Code" },
+    { key = { "l", "s" }, path = "~/.local/share", desc = "Local share"  },
+    { key = { "l", "b" }, path = "~/.local/bin",   desc = "Local bin"    },
+    { key = { "l", "t" }, path = "~/.local/state", desc = "Local state"  },
+  },
+  desc_strategy = "path",
+  ephemeral = true,
+  tabs = true,
+  notify = false,
+  fuzzy_cmd = "fzf",
 })

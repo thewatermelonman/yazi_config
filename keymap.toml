@@ -1,20 +1,15 @@
 [[mgr.prepend_keymap]]
-on = [ "b", "m" ]
-run = "plugin bookmarks save"
-desc = "Save current position as a bookmark"
-
-[[mgr.prepend_keymap]]
-on = [ "M" ]
-run = "plugin bookmarks jump"
-desc = "Jump to a bookmark"
-
-[[mgr.prepend_keymap]]
-on = [ "b", "d" ]
-run = "plugin bookmarks delete"
-desc = "Delete a bookmark"
-
-[[mgr.prepend_keymap]]
 on = [ "e", "l" ]
 run = 'shell "lazygit" --block'
 desc = "Open lazygit"
 
+[[mgr.prepend_keymap]]
+desc = "Start bunny.yazi"
+on = ";"
+run = "plugin bunny"
+
+# Optionally, add another keymap to immediately fuzzy search bookmarks
+[[mgr.prepend_keymap]]
+desc = "Start bunny.yazi fuzzy search"
+on = "'"
+run = "plugin bunny fuzzy"
