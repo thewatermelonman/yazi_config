@@ -29,7 +29,7 @@ else
 		hops = {
 			{ key = "/",          path = "/",                                    },
 			{ key = "t",          path = "/tmp",                                 },
-			{ key = "n",          path = "~/nixos/hosts/linux_pc/",     desc = "nix config"    },
+			{ key = "n",          path = "~/nixos/",     desc = "nix config"    },
 			{ key = "~",          path = "~",              desc = "Home"         },
 			{ key = "D",          path = "~/Desktop",      desc = "Desktop"      },
 			{ key = "d",          path = "~/Downloads/",    desc = "Downloads"    },
@@ -38,6 +38,7 @@ else
 			{ key = "N",          path = "~/.config/nvim/",      desc = "Nvim Config" },
 			{ key = "c",          path = "~/Documents/code/",     desc = "Code" },
 			{ key = "h",          path = "~/Documents/",     desc = "Documents" },
+			{ key = "o",          path = "~/Documents/Notes/",     desc = "Notes" },
 			{ key = "u",          path = "~/Documents/Uni/BA/",     desc = "Uni" },
 			{ key = "z",          path = "~/Documents/code/zig",     desc = "Zig Code" },
 			{ key = { "l", "s" }, path = "~/.local/share", desc = "Local share"  },
